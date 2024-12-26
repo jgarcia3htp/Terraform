@@ -54,7 +54,7 @@ resource "aws_security_group" "terraform-instance-sg" {
         cidr_blocks = ["0.0.0.0/0"]  # Permite acceso HTTP desde cualquier IP
     }
 
-        ingress {
+    ingress {
         from_port   = 30000
         to_port     = 30000
         protocol    = "tcp"
@@ -80,5 +80,5 @@ resource "aws_security_group" "terraform-instance-sg" {
 
 output "server_public_ip" {
 	description = "Direccion IP publica de la instancia EC2"
-	value       = aws_instance.terraform-server.public.ip
+	value       = aws_instance.terraform-server.public_ip
 }
