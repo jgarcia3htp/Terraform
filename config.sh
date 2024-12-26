@@ -15,3 +15,6 @@ sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 #minikube
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 sudo install minikube-linux-amd64 /usr/local/bin/minikube && rm minikube-linux-amd64
+
+#
+curl -O https://raw.githubusercontent.com/main/nisanchezva/monitoring.yaml
