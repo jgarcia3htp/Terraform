@@ -27,8 +27,14 @@ curl -O https://raw.githubusercontent.com/nisanchezva/practicaGrupal/main/monito
 curl -O https://raw.githubusercontent.com/nisanchezva/practicaGrupal/main/Dockerfile_nginx
 curl -O https://raw.githubusercontent.com/nisanchezva/practicaGrupal/main/deploy.sh
 curl -O https://raw.githubusercontent.com/nisanchezva/practicaGrupal/main/nginx.conf
+curl -O https://raw.githubusercontent.com/nisanchezva/practicaGrupal/main/dashboard.json
 
-#ejecutables
+#ejecutables iniciales
 sudo sh /workdir/deploy.sh
 sudo minikube start --force
 sudo kubectl config use-context minikube
+
+#ejecutables
+sudo kubectl create namespace monitoring
+sudo kubectl create configmap grafana-dashboard -n monitoring --from-file=./dashboard.json
+sudo kubectl apply -f monitoring.yaml
