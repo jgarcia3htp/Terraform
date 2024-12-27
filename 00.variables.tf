@@ -13,3 +13,8 @@ variable "instance_name" {
     description = "Nombre de la instancia"
     default = "terraform-instance"
 }
+
+variable "public_key" {
+    description = "Llave de la instancia"
+    type = string
+}
