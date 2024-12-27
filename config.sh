@@ -21,7 +21,9 @@ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-
 sudo install minikube-linux-amd64 /usr/local/bin/minikube && rm minikube-linux-amd64
 
 #granafa y proxy inverso
+    #grafana
 curl -O https://raw.githubusercontent.com/nisanchezva/practicaGrupal/main/monitoring.yaml
+    #proxy inverso
 curl -O https://raw.githubusercontent.com/nisanchezva/practicaGrupal/main/Dockerfile_nginx
 curl -O https://raw.githubusercontent.com/nisanchezva/practicaGrupal/main/deploy.sh
 curl -O https://raw.githubusercontent.com/nisanchezva/practicaGrupal/main/nginx.conf
