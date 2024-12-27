@@ -26,7 +26,7 @@ curl -O https://raw.githubusercontent.com/nisanchezva/practicaGrupal/main/Docker
 curl -O https://raw.githubusercontent.com/nisanchezva/practicaGrupal/main/deploy.sh
 curl -O https://raw.githubusercontent.com/nisanchezva/practicaGrupal/main/nginx.conf
 
-#ejecutables
+#ejecutables (pendientes)
 #sh deploy.sh
 #sudo su root
 #sudo minikube start --force
