@@ -48,3 +48,4 @@ sudo kubectl apply -f tomcat-deploy.yaml
 sudo kubectl apply -f tomcat-svc.yaml
 sudo kubectl apply -f tomcat-pvc.yaml
 sudo kubectl apply -f tomcat-hpa.yaml
+sudo minikube addons enable metrics-server
