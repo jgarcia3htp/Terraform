@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 
 #actualizacion de paquetes
 sudo apt-get update
