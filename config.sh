@@ -28,8 +28,7 @@ curl -O https://raw.githubusercontent.com/nisanchezva/practicaGrupal/main/Docker
 curl -O https://raw.githubusercontent.com/nisanchezva/practicaGrupal/main/deploy.sh
 curl -O https://raw.githubusercontent.com/nisanchezva/practicaGrupal/main/nginx.conf
 
-#ejecutables (pendientes)
+#ejecutables
 sudo sh /workdir/deploy.sh
-#sudo su root
 sudo minikube start --force
 sudo kubectl config use-context minikube
