@@ -44,27 +44,27 @@ resource "aws_security_group" "terraform-instance-sg" {
         from_port   = 22
         to_port     = 22
         protocol    = "tcp"
-        cidr_blocks = ["0.0.0.0/0"]  # Permite acceso SSH desde cualquier IP
+        cidr_blocks = ["0.0.0.0/0"]
     }
 
     ingress {
         from_port   = 80
         to_port     = 80
         protocol    = "tcp"
-        cidr_blocks = ["0.0.0.0/0"]  # Permite acceso HTTP desde cualquier IP
+        cidr_blocks = ["0.0.0.0/0"]
     }
 
     ingress {
         from_port   = 30000
         to_port     = 30000
         protocol    = "tcp"
-        cidr_blocks = ["0.0.0.0/0"]  # Permite acceso HTTP desde cualquier IP
+        cidr_blocks = ["0.0.0.0/0"]
     }
 
     egress {
         from_port   = 0
         to_port     = 0
-        protocol    = "-1"  # Permite todo el tráfico de salida
+        protocol    = "-1" 
         cidr_blocks = ["0.0.0.0/0"]
     }
 
