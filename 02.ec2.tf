@@ -10,6 +10,13 @@ resource "aws_instance" "terraform-instance" {
         aws_security_group.terraform-instance-sg.id
     ]
 
+    root_block_device {
+      volume_size           = 58
+      volume_type           = "gp3"
+      delete_on_termination = true
+      encrypted             = false
+    } 
+
     tags = {
       Name        = var.instance_name
       Environment = "test"
