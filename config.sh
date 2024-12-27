@@ -8,7 +8,7 @@ sudo apt-get install -y docker.io
 sudo systemctl start docker
 sudo systemctl enable docker
 
-#directorio de trabajo
+#directorio trabajo
 sudo mkdir /workdir
 cd /workdir/
 
