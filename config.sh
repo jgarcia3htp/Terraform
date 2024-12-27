@@ -30,3 +30,4 @@ curl -O https://raw.githubusercontent.com/nisanchezva/practicaGrupal/main/nginx.
 sudo sh /workdir/deploy.sh
 #sudo su root
 sudo minikube start --force
+sudo kubectl config use-context minikube
